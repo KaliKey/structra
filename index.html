@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Structra — ruhiges Business-Betriebssystem</title>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #111826;
+      --text: #e7edf6;
+      --muted: #a9b6c9;
+      --line: rgba(255,255,255,0.10);
+      --btn: #e7edf6;
+      --btnText: #0b0f14;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background: radial-gradient(1200px 600px at 20% 10%, rgba(231,237,246,0.10), transparent),
+                  radial-gradient(900px 500px at 80% 30%, rgba(169,182,201,0.08), transparent),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    a { color: var(--text); }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 28px 18px 80px; }
+    .top {
+      display:flex; align-items:center; justify-content:space-between; gap:16px;
+      padding: 12px 0 22px;
+      border-bottom: 1px solid var(--line);
+    }
+    .brand { font-weight: 700; letter-spacing: 0.2px; }
+    .pill {
+      border: 1px solid var(--line); border-radius: 999px; padding: 8px 12px;
+      color: var(--muted); font-size: 13px;
+    }
+    .hero { padding: 34px 0 18px; }
+    h1 { font-size: 42px; line-height: 1.12; margin: 0 0 14px; }
+    .sub { font-size: 18px; color: var(--muted); max-width: 780px; }
+    .ctaRow { display:flex; gap:10px; margin-top: 18px; flex-wrap: wrap; }
+    .btn {
+      display:inline-block; padding: 11px 14px; border-radius: 12px;
+      background: var(--btn); color: var(--btnText);
+      text-decoration: none; font-weight: 650;
+    }
+    .btn.secondary {
+      background: transparent; color: var(--text);
+      border: 1px solid var(--line);
+      font-weight: 600;
+    }
+    .grid {
+      display:grid; grid-template-columns: repeat(12, 1fr); gap: 14px;
+      margin-top: 26px;
+    }
+    .card {
+      grid-column: span 6;
+      background: rgba(17,24,38,0.80);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 16px 16px 14px;
+    }
+    .card h3 { margin: 0 0 8px; font-size: 16px; }
+    .card p { margin: 0; color: var(--muted); }
+    .section { margin-top: 30px; padding-top: 26px; border-top: 1px solid var(--line); }
+    .section h2 { margin: 0 0 10px; font-size: 22px; }
+    ul { margin: 10px 0 0 18px; color: var(--muted); }
+    li { margin: 7px 0; }
+    .twoCol {
+      display:grid; grid-template-columns: 1fr 1fr; gap: 14px;
+      margin-top: 12px;
+    }
+    .note {
+      font-size: 13px; color: var(--muted);
+      border: 1px dashed var(--line);
+      border-radius: 16px; padding: 12px 12px;
+    }
+    .faq details {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 12px 12px;
+      background: rgba(17,24,38,0.65);
+      margin: 10px 0;
+    }
+    .faq summary { cursor: pointer; font-weight: 650; }
+    footer {
+      margin-top: 34px; padding-top: 18px; border-top: 1px solid var(--line);
+      color: var(--muted); font-size: 12.5px;
+    }
+    .small { font-size: 13px; color: var(--muted); }
+    @media (max-width: 760px) {
+      h1 { font-size: 34px; }
+      .card { grid-column: span 12; }
+      .twoCol { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">Structra</div>
+      <div class="pill">ruhiges Business-Betriebssystem • keine App • kein Autopilot</div>
+    </div>
+
+    <div class="hero">
+      <h1>Struktur, die Menschen trägt.</h1>
+      <p class="sub">
+        Structra ist ein ruhiges Betriebssystem für Selbstständigkeit und Business: Klarheit statt Dauerstress,
+        Entscheidungen statt Chaos, Grenzen statt Überforderung — ohne Hype, ohne Druck, ohne Versprechen.
+      </p>
+      <div class="ctaRow">
+        <a class="btn" href="#pilot">Pilot anfragen</a>
+        <a class="btn secondary" href="#wie">Wie wir arbeiten</a>
+      </div>
+      <p class="small">Stand: 16.01.2026 • Der Mensch trifft die finale Entscheidung.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Ordnung in Gedanken & Projekte</h3>
+        <p>Wir reduzieren Komplexität, machen Prioritäten sichtbar und schaffen einen tragfähigen Rhythmus.</p>
+      </div>
+      <div class="card">
+        <h3>Entscheidungen vorbereiten — nicht ersetzen</h3>
+        <p>Optionen, Annahmen, Risiken, Gegenmaßnahmen, Messkriterien. Du entscheidest.</p>
+      </div>
+      <div class="card">
+        <h3>Überforderung verhindern</h3>
+        <p>Maximal 3 Prioritäten. Scope-halving bei hoher Belastung. Human Gates bei hohen Einsätzen.</p>
+      </div>
+      <div class="card">
+        <h3>Ethik & Grenzen vor Wachstum</h3>
+        <p>Keine manipulative Sales-Logik. Keine Einkommens-/Erfolgsgarantien. Kein KI-Autopilot.</p>
+      </div>
+    </div>
+
+    <div class="section" id="was">
+      <h2>Was Structra ist</h2>
+      <p class="sub">
+        Kein Tool. Keine Plattform. Kein System, das dich antreibt.
+        Structra ist ein dokumentenbasiertes Betriebssystem: Rituale, Register, Guardrails und eine klare Sprache.
+      </p>
+
+      <div class="twoCol">
+        <div class="note">
+          <strong>Nicht verhandelbare Prinzipien</strong><br/>
+          Struktur vor Geschwindigkeit • Klarheit vor Komplexität • Nachhaltigkeit vor kurzfristigem Gewinn •
+          Ethik vor Skalierung • Regeln vor freier Autonomie • Mensch vor System
+        </div>
+        <div class="note">
+          <strong>Was Structra nicht tut</strong><br/>
+          keine Garantien • kein Druck • kein Hype • keine unkontrollierte Automatisierung •
+          keine Rechts-/Steuer-/Finanzberatung • keine Therapie
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="wie">
+      <h2>Wie wir arbeiten</h2>
+      <p class="sub">
+        Jede Empfehlung ist nachvollziehbar und prüfbar:
+        <strong>Annahmen</strong> • <strong>Alternativen</strong> • <strong>Risiken</strong> • <strong>Gegenmaßnahmen</strong> •
+        <strong>Messkriterium</strong> • <strong>Human Gate</strong>.
+      </p>
+      <ul>
+        <li><strong>Daily 10</strong>: 10 Minuten Fokus + Energie + nächster Schritt</li>
+        <li><strong>Weekly 60</strong>: Review → 1–2 Decision Memos → Plan → 1 Output-Artefakt</li>
+        <li><strong>Register</strong>: Entscheidungen, Risiken, Metriken (Klarheit/Belastung/Systemvertrauen)</li>
+      </ul>
+    </div>
+
+    <div class="section" id="pilot">
+      <h2>Structra Pilot (4 Wochen)</h2>
+      <p class="sub">
+        Für Menschen, die ihr Business ruhiger und tragfähiger strukturieren wollen — ohne App, ohne „mehr/schneller“.
+      </p>
+      <ul>
+        <li>Onboarding (60–90 Min): Ziele, Constraints, Entscheidungstau, Risiko-Register</li>
+        <li>4 Sessions (45–60 Min): Review → Decision → Plan</li>
+        <li>Dokumente & Templates: Decision Memos, Weekly Rhythm, Claims-Check</li>
+      </ul>
+      <div class="ctaRow">
+        <a class="btn" href="https://calendly.com/danielklimas/structra-call">Kennenlern-Call buchen</a>
+        <a class="btn secondary" href="#faq">FAQ</a>
+      </div>
+      <p class="small">Hinweis: Keine Garantien. Kein Autopilot. Ergebnisse hängen von Kontext und Umsetzung ab.</p>
+    </div>
+
+    <div class="section faq" id="faq">
+      <h2>FAQ</h2>
+
+      <details>
+        <summary>Ist das eine App?</summary>
+        <p class="sub">Nein. Structra funktioniert dokumentenbasiert. Technik ist optional und bleibt dienend.</p>
+      </details>
+
+      <details>
+        <summary>Garantierst du Ergebnisse?</summary>
+        <p class="sub">Nein. Wir arbeiten mit Messkriterien und Reviews, aber ohne Versprechen.</p>
+      </details>
+
+      <details>
+        <summary>Ist das Coaching oder Therapie?</summary>
+        <p class="sub">Es ist strukturierende Systemarbeit. Keine Therapie und keine professionelle Beratung (Recht/Steuern/Finanzen/Medizin).</p>
+      </details>
+
+      <details>
+        <summary>Ich will, dass du mir sagst, was ich tun soll.</summary>
+        <p class="sub">Structra bereitet Entscheidungen vor. Du entscheidest final. Das schützt Autonomie und Verantwortung.</p>
+      </details>
+    </div>
+
+    <footer>
+      <strong>Disclaimer:</strong> Structra ist ein Struktur- und Entscheidungsrahmen und ersetzt keine professionelle Beratung
+      (Recht, Steuern, Finanzen, Medizin, Psychotherapie). Keine Erfolgs- oder Einkommensgarantien.
+      <br/><br/>
+      © Structra • Kontakt: <a href="mailto:dk-office@mail.de">dk-office@mail.de</a>
+    </footer>
+  </div>
+</body>
+</html>
